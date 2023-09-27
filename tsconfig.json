@@ -2,10 +2,14 @@
     "extends": "@tsconfig/react-native/tsconfig.json",
     "compilerOptions": {
         "baseUrl": ".",
+        "noImplicitAny": false, // delete this option in the future
         "paths": {
-            "*": ["src/*"],
+            "@": ["src/*"],
             "tests": ["tests/*"],
-            "@components/*": ["src/components/*"]
+            "@components/*": ["src/components/*"],
+            "@screens/*": ["src/screens/*"],
+            "@hooks/*": ["src/hooks/*"],
+            "@constants/*": ["src/constants/*"]
         }
     }
 }
